@@ -69,4 +69,14 @@ public class DataParserGBT32960 implements IDataParser {
 
         return listPacks;
     }
+
+    @Override
+    public ByteBuf createResponse(DataPack requestPack, ERespReason reason) {
+        return null;
+    }
+
+    @Override
+    public void destroyResponse(ByteBuf responseBuf) {
+
+    }
 }
