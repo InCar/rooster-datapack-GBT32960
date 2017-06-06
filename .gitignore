@@ -3,8 +3,12 @@
 *.iml
 build
 out
+bin
+.settings
 
 application-*.yml
 gradle.properties
 *.log
 *.out
+.project
+.classpath
