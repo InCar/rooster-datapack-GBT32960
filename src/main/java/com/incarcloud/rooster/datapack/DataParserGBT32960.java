@@ -4,6 +4,7 @@ import io.netty.buffer.ByteBuf;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class DataParserGBT32960 implements IDataParser {
 
@@ -79,6 +80,11 @@ public class DataParserGBT32960 implements IDataParser {
 
     }
 
+
+    @Override
+    public Map<String, Object> getMetaData(ByteBuf buffer) {
+        return null;
+    }
 
     @Override
     public List<DataPackTarget> extractBody(DataPack dataPack) {
